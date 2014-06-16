@@ -1,0 +1,9 @@
+.png=image/png
+.gif=image/gif
+.jpg=image/jpeg
+.zip=application/zip
+.swf=application/x-shockwave-flash
+.xml=application/xml
+.html=text/html
+.css=text/css
+.js=application/x-javascript

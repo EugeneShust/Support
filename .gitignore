@@ -1,0 +1,15 @@
+# Ignore Folders
+__history/
+_debug/
+_release/
+_prerelease/
+
+# Ignore local project files
+*.dproj.local
+*.identcache
+
+# Ignore individual files
+pSupport.res
+pSupport.rc
+pSupport.stat
+
