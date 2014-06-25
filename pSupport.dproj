@@ -159,15 +159,6 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="Core\MemoryManager\ScaleMM2.pas"/>
-        <DCCReference Include="Core\MemoryManager\smmFunctions.pas"/>
-        <DCCReference Include="Core\MemoryManager\smmGlobal.pas"/>
-        <DCCReference Include="Core\MemoryManager\smmLargeMemory.pas"/>
-        <DCCReference Include="Core\MemoryManager\smmLogging.pas"/>
-        <DCCReference Include="Core\MemoryManager\smmMediumMemory.pas"/>
-        <DCCReference Include="Core\MemoryManager\smmSmallMemory.pas"/>
-        <DCCReference Include="Core\MemoryManager\smmStatistics.pas"/>
-        <DCCReference Include="Core\MemoryManager\smmTypes.pas"/>
         <DCCReference Include="Core\External\superobject.pas"/>
         <DCCReference Include="Core\External\superxmlparser.pas"/>
         <DCCReference Include="Core\uThreads.pas"/>
