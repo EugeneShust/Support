@@ -119,11 +119,11 @@ begin
           mla.S['owner.lastName'] := ql.gets(i, 'lastName');
           mla.i['owner.userid'] := ql.geti(i, 'userId', -1);
           mla.i['createTime'] := DateTimeToUnix(ql.getd(i, 'createTime'));
-          mla.B['favorite'] := boolean(ql.geti(i, 'favorite'));
+          mla.B['favorite'] := ql.getB(i, 'favorite');
           mla.i['lastUpdate'] := DateTimeToUnix(ql.getd(i, 'lastUpdate'));
           mla.S['clientVersion'] := ql.gets(i, 'Version', '');
           mla.S['deviceName'] := ql.gets(i, 'Device', '');
-          mla.B['isDonator'] := boolean(ql.geti(i, 'isDonator', 0));
+          mla.B['isDonator'] := ql.getB(i, 'isDonator', False);
           mla.S['type'] := ql.gets(i, 'type');
           mla.S['state'] := ql.gets(i, 'state');
           mla.i['game_id'] := ql.geti(i, 'game_id');
@@ -162,7 +162,7 @@ begin
       LSOObj.i['gameId'] := q.geti(i, 'GameId');
       LSOObj.i['socialId'] := q.geti(i, 'SocialId');
       LSOObj.S['language'] := q.gets(i, 'Language');
-      LSOObj.B['hide'] := boolean(q.geti(i, 'Hide', 0));
+      LSOObj.B['hide'] := q.getB(i, 'Hide', False);
       LSOObj.I['count'] := q.geti(i, 'Count', 0);
       lso.O['access'].A['access'].Add(LSOObj);
     end;
@@ -205,9 +205,9 @@ begin
       mla.S['findMessage.owner.lastName'] := ql.gets(i, 'lastName');
       mla.i['findMessage.owner.userid'] := ql.geti(i, 'userId', -1);
       mla.i['findMessage.createTime'] := DateTimeToUnix(ql.getd(i, 'createTime'));
-      mla.B['findMessage.favorite'] := boolean(ql.geti(i, 'favorite'));
+      mla.B['findMessage.favorite'] := ql.getB(i, 'favorite');
       mla.i['findMessage.lastUpdate'] := DateTimeToUnix(ql.getd(i, 'lastUpdate'));
-      mla.B['findMessage.isDonator'] := boolean(ql.geti(i, 'isDonator', 0));
+      mla.B['findMessage.isDonator'] := ql.getB(i, 'isDonator', False);
       mla.S['findMessage.clientVersion'] := ql.gets(i, 'Version', '');
       mla.S['findMessage.deviceName'] := ql.gets(i, 'Device', '');
       mla.S['findMessage.type'] := ql.gets(i, 'type');
@@ -255,9 +255,9 @@ begin
       m.S['message.owner.lastName'] := ql.gets(0, 'lastName');
       m.i['message.owner.userid'] := ql.geti(0, 'userId', -1);
       m.i['message.createTime'] := DateTimeToUnix(ql.getd(0, 'createTime'));
-      m.B['message.favorite'] := boolean(ql.geti(0, 'favorite'));
+      m.B['message.favorite'] := ql.getB(0, 'favorite');
       m.i['message.lastUpdate'] := DateTimeToUnix(ql.getd(0, 'lastUpdate'));
-      m.B['message.isDonator'] := boolean(ql.geti(i, 'isDonator', 0));
+      m.B['message.isDonator'] := ql.getB(i, 'isDonator', False);
       m.S['message.clientVersion'] := ql.gets(i, 'Version', '');
       m.S['message.deviceName'] := ql.gets(i, 'Device', '');
       m.S['message.type'] := ql.gets(0, 'type');
@@ -354,9 +354,9 @@ begin
         messages.S['owner.lastName'] := ql.gets(i, 'lastName');
         messages.i['owner.userid'] := ql.geti(i, 'userId', -1);
         messages.i['createTime'] := DateTimeToUnix(ql.getd(i, 'createTime'));
-        messages.B['favorite'] := boolean(ql.geti(i, 'favorite'));
+        messages.B['favorite'] := ql.getB(i, 'favorite');
         messages.i['lastUpdate'] := DateTimeToUnix(ql.getd(i, 'lastUpdate'));
-        messages.B['isDonator'] := boolean(ql.geti(i, 'isDonator', 0));
+        messages.B['isDonator'] := ql.getB(i, 'isDonator', False);
         messages.S['clientVersion'] := ql.gets(i, 'Version', '');
         messages.S['deviceName'] := ql.gets(i, 'Device', '');
         messages.S['type'] := ql.gets(i, 'type');

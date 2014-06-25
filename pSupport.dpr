@@ -6,15 +6,6 @@ program pSupport;
 
 
 uses
-  ScaleMM2 in 'Core\MemoryManager\ScaleMM2.pas',
-  smmFunctions in 'Core\MemoryManager\smmFunctions.pas',
-  smmGlobal in 'Core\MemoryManager\smmGlobal.pas',
-  smmLargeMemory in 'Core\MemoryManager\smmLargeMemory.pas',
-  smmLogging in 'Core\MemoryManager\smmLogging.pas',
-  smmMediumMemory in 'Core\MemoryManager\smmMediumMemory.pas',
-  smmSmallMemory in 'Core\MemoryManager\smmSmallMemory.pas',
-  smmStatistics in 'Core\MemoryManager\smmStatistics.pas',
-  smmTypes in 'Core\MemoryManager\smmTypes.pas',
   superobject in 'Core\External\superobject.pas',
   superxmlparser in 'Core\External\superxmlparser.pas',
   uThreads in 'Core\uThreads.pas',

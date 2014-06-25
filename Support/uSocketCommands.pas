@@ -480,11 +480,11 @@ begin
         LSOTikcet.s['owner.lastName'] := getS(i, 'lastName');
         LSOTikcet.i['owner.userid'] := geti(i, 'userId', -1);
         LSOTikcet.i['createTime'] := DateTimeToUnix(getd(i, 'createTime'));
-        LSOTikcet.B['favorite'] := boolean(geti(i, 'favorite'));
+        LSOTikcet.B['favorite'] := getB(i, 'favorite');
         LSOTikcet.i['lastUpdate'] := DateTimeToUnix(getd(i, 'lastUpdate'));
         LSOTikcet.s['clientVersion'] := getS(i, 'Version', '');
         LSOTikcet.s['deviceName'] := getS(i, 'Device', '');
-        LSOTikcet.B['isDonator'] := boolean(geti(i, 'isDonator', 0));
+        LSOTikcet.B['isDonator'] := getB(i, 'isDonator', False);
         LSOTikcet.s['type'] := getS(i, 'type');
         LSOTikcet.s['state'] := getS(i, 'state');
         LSOTikcet.i['game_id'] := geti(i, 'game_id');
